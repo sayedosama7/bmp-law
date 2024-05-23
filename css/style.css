@@ -24,7 +24,6 @@ body {
     --main-color: #0CB2C2;
     --second-color: #FFFFFF;
     --bg-color: #F5F5F5;
-    --transition: ;
 }
 
 .bg-info {
@@ -73,6 +72,7 @@ body {
     z-index: 5;
     background-color: var(--main-color) !important;
     width: 50px;
+    cursor: pointer;
 }
 
 .overlay-banner,
@@ -301,7 +301,7 @@ button:not(:disabled) {
     margin-top: 0px !important;
     padding: 50px;
     z-index: 11;
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
 }
 
 .main-title h3 {
@@ -710,7 +710,6 @@ button:not(:disabled) {
     transform: translate(50%, -50%) !important;
 }
 
-
 /* End partner  */
 
 /* start contact-us   */
@@ -728,7 +727,6 @@ button:not(:disabled) {
 
 /* start footer  */
 
-
 .footer {
     background-image: linear-gradient(to right, #000101be, #000101be), url('../images/footer/footer.png');
     background-position: center;
@@ -737,7 +735,6 @@ button:not(:disabled) {
     text-align: center;
     padding: 50px 50px 10px;
 }
-
 
 .overlay-dots-circle {
     position: absolute;
@@ -871,7 +868,6 @@ button:not(:disabled) {
     width: 80%;
     padding: 15px 10px !important;
     z-index: 1;
-
 }
 
 .services-card:hover .services-btn {
@@ -930,14 +926,14 @@ button:not(:disabled) {
     width: 100%;
 }
 
-@media(max-width:567px) {
+@media(max-width:768px) {
     .services-section {
         height: auto;
         margin-bottom: 20px;
     }
 
     .services {
-        margin-bottom: 100px;
+        margin-bottom: 20px;
     }
 
 }
@@ -1010,7 +1006,7 @@ button:not(:disabled) {
 
 .ifram-contact {
     margin-top: -180px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .ifram-width {
@@ -1019,7 +1015,7 @@ button:not(:disabled) {
     height: 70vh;
 }
 
-@media(max-width:567px) {
+@media(max-width:768px) {
     .contact-us {
         padding: 20px;
         margin-top: 0 !important;
@@ -1035,7 +1031,7 @@ button:not(:disabled) {
 
     .ifram-contact {
         margin-top: 20px;
-        margin-bottom: 150px;
+        margin-bottom: 50px;
     }
 }
 
@@ -1138,7 +1134,7 @@ button:not(:disabled) {
     }
 }
 
-
+/* start swiper  */
 swiper-container {
     width: 100%;
     height: 100%;
