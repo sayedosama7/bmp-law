@@ -473,7 +473,7 @@ button:not(:disabled) {
     background-size: cover;
     color: var(--second-color);
     text-align: center;
-    padding: 50px;
+    padding: 50px 50px 10px;
 }
 
 
@@ -483,7 +483,7 @@ button:not(:disabled) {
     right: -25px;
 }
 
-.footer p {
+.footer .footer-caption {
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -517,24 +517,18 @@ button:not(:disabled) {
         margin-left: 0 !important;
     }
 
-    .footer p {
+    .footer .footer-caption {
         margin-bottom: 10px;
+        margin-top: 10px !important;
+        font-size: 13px;
     }
 
     .footer-hr {
         margin-top: 10px;
     }
 
-    .footer p {
-        margin-top: 10px !important;
-    }
-
     .overlay-dots-circle {
         width: 100px;
-    }
-
-    .footer-caption {
-        font-size: 13px;
     }
 
     .footer-links a {
