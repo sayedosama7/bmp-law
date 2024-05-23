@@ -1122,7 +1122,6 @@ button:not(:disabled) {
     top: 50%;
     left: 0%;
     transform: translateX(-45%);
-
     width: 100px;
 }
 
@@ -1133,7 +1132,8 @@ button:not(:disabled) {
     .overlay-banner-circle-vision2,
     .overlay-banner-circle-partner,
     .overlay-banner-circle-contact,
-    .overlay-banner-circle-footer {
+    .overlay-banner-circle-footer,
+    .overlay-banner-circle-about-emploee {
         display: none;
     }
 }
