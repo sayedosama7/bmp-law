@@ -15,6 +15,7 @@
       {
         "frame-title": "off"
       }
-    ]
+    ],
+    "compat-api/html": "off"
   }
 }

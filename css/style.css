@@ -27,6 +27,11 @@ body {
     --transition: ;
 }
 
+.bg-info {
+    background-color: var(--main-color) !important;
+
+}
+
 .text-info {
     color: var(--main-color) !important;
 }
@@ -146,6 +151,7 @@ button:not(:disabled) {
 .navbar {
     box-shadow: none !important;
     padding-top: 20px;
+    z-index: 999;
 }
 
 .navbar-brand img {
@@ -285,11 +291,267 @@ button:not(:disabled) {
 
 /* End about us  */
 
+/* start about-page  */
+.about-caption-page {
+    padding-top: 7%;
+    color: #fff;
+}
+
+.about-page-empolee {
+    margin-top: 0px !important;
+    padding: 50px;
+    z-index: 11;
+    margin-bottom: 200px;
+}
+
+.main-title h3 {
+    font-size: 40px;
+}
+
+.main-title p {
+    font-size: 25px;
+}
+
+.about-empolee {
+    background-image: none !important;
+    background-color: var(--second-color);
+}
+
+.about-caption-page h2 {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.about-caption-page h2::after {
+    position: absolute;
+    content: '';
+    width: 70%;
+    height: 5px;
+    background-color: var(--main-color);
+    bottom: -10px;
+    right: 0;
+}
+
+.about-caption-page p {
+    line-height: 2;
+}
+
+.about-page-section {
+    height: auto;
+    padding-bottom: 200px;
+}
+
+.our-mission {
+    margin-top: -100px;
+
+}
+
+.our-mission p,
+.our-vision p {
+    line-height: 2;
+    font-size: 20px;
+}
+
+.our-mission h2,
+.our-vision h2 {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.our-mission h2::after,
+.our-vision h2::after {
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 5px;
+    background-color: var(--second-color);
+    bottom: -10px;
+    right: 0;
+}
+
+.our-vision h2::after {
+    bottom: -15px;
+}
+
+@media(max-width:768px) {
+    .our-mission {
+        padding: 20px auto 0;
+
+    }
+
+    .about-caption-page p {
+        font-size: 14px;
+    }
+
+    .our-mission .box {
+        flex-direction: column !important;
+        padding: 20px !important;
+    }
+
+    .our-mission .box img {
+        display: block;
+        margin: auto;
+    }
+
+    .about-page-empolee {
+        margin-bottom: 0px;
+        padding: 10px;
+    }
+
+    .main-title h3 {
+        font-size: 30px;
+    }
+
+    .main-title p {
+        font-size: 20px;
+    }
+}
+
+/* start our-vision  */
+.our-vision {
+    background-color: #324252;
+    padding: 100px 50px;
+    position: relative;
+}
+
+.our-vision p {
+    position: relative;
+}
+
+.our-vision p::after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: var(--main-color);
+    top: 10px;
+    right: -20px;
+}
+
+.our-vision-img .img-banner {
+    position: absolute;
+    bottom: -70px;
+    left: 10px;
+    z-index: 11;
+}
+
+.our-vision-img .img-bg {
+    position: absolute;
+    bottom: 0px;
+}
+
+@media(max-width:768px) {
+    .our-vision-img .img-banner {
+        position: static;
+        display: block;
+    }
+
+    .our-vision-img .img-bg {
+        display: none;
+    }
+
+    .our-vision {
+        height: auto;
+        padding: 30px !important;
+    }
+
+    .our-mission p,
+    .our-vision p {
+        line-height: 1.5;
+        font-size: 16px;
+    }
+
+    .our-vision-caption {
+        padding: 20px !important;
+    }
+
+    .our-vision {
+        background-color: #324252;
+        padding: 100px 50px;
+        position: static;
+    }
+}
+
+
+/* start our-values  */
+.our-values {
+    background-color: #E5E5E5;
+    padding: 80px 50px;
+    position: relative;
+}
+
+.our-values h2 {
+    color: #000 !important;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.our-values h2::after {
+    color: #000 !important;
+    position: absolute;
+    width: 70px;
+    height: 4px;
+    bottom: -14px;
+    right: 0;
+    background-color: #000;
+    content: '';
+}
+
+.values-img-banner {
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -45%);
+    z-index: 1;
+}
+
+.values-img-bg {
+    top: 50%;
+    right: 55%;
+    transform: translate(50%, -50%);
+}
+
+@media(max-width:768px) {
+    .values-icons {
+        flex-direction: column !important;
+    }
+
+    .values-icons .box {
+        margin-right: 0 !important;
+    }
+
+    .small-box {
+        flex-direction: column !important;
+        align-items: center;
+        text-align: center;
+    }
+
+    .our-values {
+        padding: 30px;
+        position: static !important;
+    }
+
+    .values-img-banner {
+        position: static !important;
+        display: block !important;
+        top: 0%;
+        right: 0%;
+        transform: translate(0%, 0%);
+    }
+
+    .values-img-bg {
+        display: none !important;
+    }
+
+}
+
+/* End about-page  */
+
 /* start vision  */
 .vision {
     padding: 50px;
     margin-top: -100px;
-    padding-bottom: 400px;
+    /* padding-bottom: 400px; */
     background: url('../images/vision/vision-background.png');
     background-size: cover;
 }
@@ -412,11 +674,11 @@ button:not(:disabled) {
 }
 
 .emploee .emploee-caption {
-    margin-top: -400px;
+    /* margin-top: -400px; */
 }
 
 .emploee .emploee-caption-card {
-    margin-top: -200px !important;
+    /* margin-top: -200px !important; */
 }
 
 .emploee .emploee-caption-card .card {
@@ -567,6 +829,7 @@ button:not(:disabled) {
     transform: translate(50%, -50%);
     transition: all .3s ease;
 }
+
 .services-card-title {
     bottom: 37% !important;
 }
@@ -644,6 +907,7 @@ button:not(:disabled) {
 .services-card:hover .law3 {
     transform: rotate(20deg);
 }
+
 .services-card:hover .law4 {
     top: 15%;
 }
@@ -671,6 +935,7 @@ button:not(:disabled) {
         height: auto;
         margin-bottom: 20px;
     }
+
     .services {
         margin-bottom: 100px;
     }
@@ -775,3 +1040,121 @@ button:not(:disabled) {
 }
 
 /* End contact-us  */
+
+/* start law-section  */
+.law-section .law-section-banner {
+    top: -120px;
+    background-color: var(--main-color);
+}
+
+.law-section-banner2 {
+    left: -50px !important;
+}
+
+@media(max-width:768px) {
+    .law-section {
+        position: static !important;
+    }
+
+    .law-section .law-section-banner {
+        position: static !important;
+        display: block !important;
+        margin-bottom: 20px;
+    }
+
+    .law-section-banner2 {
+        display: none !important;
+    }
+}
+
+/* End law-section  */
+
+/* start overlays  */
+.overlay-banner-circle-about,
+.overlay-banner-circle-vision {
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    z-index: 155;
+}
+
+.overlay-banner-circle-vision {
+    top: 50%;
+    right: 0%;
+    width: 150px;
+    width: 100px;
+}
+
+.overlay-banner-circle-vision2 {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100px;
+}
+
+.overlay-banner-circle-partner {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    transform: translateX(47%);
+    width: 100px;
+
+}
+
+.overlay-banner-circle-footer {
+    position: absolute;
+    top: -38%;
+    left: 0%;
+    transform: translateX(43%);
+    width: 100px;
+
+}
+
+.overlay-banner-circle-contact {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 100px;
+}
+
+.overlay-banner-circle-about-emploee {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateX(-45%);
+
+    width: 100px;
+}
+
+@media(max-width:768px) {
+
+    .overlay-banner-circle-about,
+    .overlay-banner-circle-vision,
+    .overlay-banner-circle-vision2,
+    .overlay-banner-circle-partner,
+    .overlay-banner-circle-contact,
+    .overlay-banner-circle-footer {
+        display: none;
+    }
+}
+
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
