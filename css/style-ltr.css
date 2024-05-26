@@ -1,0 +1,78 @@
+body {
+    direction: ltr !important;
+    text-align: left !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.about-us .about-caption h3::before {
+    left: 35px;
+    top: -20px;
+}
+
+.overlay-banner-circle-about {
+    position: absolute;
+    top: 50%;
+    left: -50%;
+}
+
+.about-caption-page h2::after {
+    left: 0;
+}
+
+.our-mission h2::after,
+.our-vision h2::after {
+    left: 0;
+}
+
+.our-vision p::after {
+    left: -20px;
+    top: 15px;
+}
+
+.services-card-title {
+    bottom: 30% !important;
+}
+
+.services-card:hover .services-card-title {
+    bottom: 23% !important;
+}
+
+.services-card-title2 {
+    position: relative;
+}
+
+.services-card-title2 {
+    bottom: 37% !important;
+
+}
+
+.services-card:hover .services-card-title2 {
+    bottom: 32% !important;
+
+}
+
+.law-section-banner2 {
+    left: 85% !important;
+    width: 100px;
+    top: 140px;
+}
+
+.our-vision-img .img-banner {
+    bottom: 0px;
+    left: 0px;
+}
+
+.our-vision-img .img-bg {
+    bottom: 70px;
+}
+
+.our-values h2::after {
+    width: 90px;
+    height: 4px;
+    bottom: -14px;
+    left: 0;
+}
+
+.our-mission h2::after {
+    width: 110px;
+}

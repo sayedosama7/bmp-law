@@ -9,23 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
     <!-- swiper css  -->
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
     <!-- fontawesome  -->
-    <link rel="stylesheet" href="./css/fontawesome.css">
+    <link rel="stylesheet" href="../css/fontawesome.css">
     <!-- bootstrap-css  -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- mdb-css  -->
-    <link rel="stylesheet" href="./css/mdb.min.css">
+    <link rel="stylesheet" href="../css/mdb.min.css">
     <!-- style-css -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-ltr.css">
     <!-- fav-icon  -->
-    <link rel="shortcut icon" href="images/lawer-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/law/lawer-icon.png" type="image/x-icon">
     <title>BIN MAHMOUD PARTNERS</title>
 </head>
 
 <body>
-
-
     <!-- start banner -->
     <div class="container-fluid banner-section">
         <div class="row">
@@ -33,38 +32,38 @@
                 <!-- start navbar  -->
 
                 <nav class="navbar navbar-expand-lg bg-transparent">
-                    <a class="navbar-brand text-white" href="index.html">
-                        <img class="img-logo" src="images/logo.png" alt="logo">
+                    <a class="navbar-brand text-white" href="index-en.html">
+                        <img class="img-logo" src="../images/logo.png" alt="logo">
                     </a>
-                    <a href="" class="navbar-toggler mt-3" type="button" data-toggle="collapse"
+                    <button class="navbar-toggler mt-3" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="text-white border px-2"><i class="fa-solid fa-bars"></i></span>
-                    </a>
+                    </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto">
-                            <li class="nav-item  ml-2 position-relative">
-                                <a class="nav-link text-white" href="index.html">الرئيسية</a>
+                            <li class="nav-item mr-2 position-relative">
+                                <a class="nav-link text-white" href="index-en.html">home</a>
                                 <div class="active-indicator"></div>
                             </li>
-                            <li class="nav-item ml-2">
-                                <a class="nav-link text-white" href="services.html">الخدمات</a>
+                            <li class="nav-item mr-2">
+                                <a class="nav-link text-white" href="services-en.html">services</a>
                             </li>
-                            <li class="nav-item ml-2">
-                                <a class="nav-link text-white" href="add-services.html">طلب خدمة</a>
+                            <li class="nav-item mr-2">
+                                <a class="nav-link text-white" href="add-services-en.html">add services</a>
                             </li>
-                            <li class="nav-item ml-2">
-                                <a class="nav-link text-white" href="about-us-page.html">نبذة</a>
+                            <li class="nav-item mr-2">
+                                <a class="nav-link text-white" href="about-us-page-en.html">about us</a>
                             </li>
-                            <li class="nav-item ml-2">
-                                <a class="nav-link text-white" href="contact-us.html">تواصل معنا</a>
+                            <li class="nav-item mr-2">
+                                <a class="nav-link text-white" href="contact-us-en.html">contact us</a>
                             </li>
                         </ul>
                         <div class="form-inline my-2 my-lg-0 select-lang">
-                            <select name="" id="">
-                                <option value="">EN</option>
-                                <option value="">AR</option>
+                            <select name="language" id="language-select" class="form-control">
+                                <option value="en" selected>EN</option>
+                                <option value="ar">AR</option>
                             </select>
                         </div>
                     </div>
@@ -73,8 +72,8 @@
             </div>
 
             <!-- overlay  -->
-            <img class="overlay-banner" src="images/banner/overlay.png" alt="">
-            <img class="overlay-banner2" src="images/banner/overlay.png" alt="">
+            <img class="overlay-banner" src="../images/banner/overlay.png" alt="overlay">
+            <img class="overlay-banner2" src="../images/banner/overlay.png" alt="overlay">
             <svg class="overlay-banner-dots" width="148" height="135" viewBox="0 0 148 135" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -412,27 +411,29 @@
                 <div class="carousel-inner text-center text-white">
 
                     <div class="carousel-item active">
-                        <h3 class="text-info fw-bold">استشارتك القانونية عندنا</h3>
-                        <h5>نقدم لك استشارات قانونية بخبرات طويلة</h5>
-                        <p class="w-50 m-auto mt-4 banner-caption">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
-                            لقد تم توليد هذا النص من مولد النص
-                            العربى، حيث
-                            يمكنك
-                            أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
-                            التطبيق.</p>
-                        <a href="add-services.html" class="btn btn-outline-light mt-5 px-4 py-2">احجز استشاررة</a>
+                        <h3 class="text-info fw-bold">Your Legal Consultation with Us</h3>
+                        <h5>We offer you legal consultations with extensive experience</h5>
+                        <p class="w-50 m-auto mt-4 banner-caption">This text is an example of text that can be replaced
+                            in the same space.
+                            This text has been generated from the Arabic text generator, where you can generate text
+                            like this or many
+                            other texts in addition to increasing the number of characters generated by the application.
+                        </p>
+                        <a href="add-services-en.html" class="btn btn-outline-light mt-5 px-4 py-2">Book a
+                            Consultation</a>
                     </div>
 
                     <div class="carousel-item">
-                        <h3 class="text-info fw-bold">استشارتك القانونية عندنا</h3>
-                        <h5>نقدم لك استشارات قانونية بخبرات طويلة</h5>
-                        <p class="w-50 m-auto mt-4 banner-caption">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
-                            لقد تم توليد هذا النص من مولد النص
-                            العربى، حيث
-                            يمكنك
-                            أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
-                            التطبيق.</p>
-                        <button class="btn btn-outline-light mt-5 px-4 py-2">احجز استشاررة</button>
+                        <h3 class="text-info fw-bold">Your Legal Consultation with Us</h3>
+                        <h5>We offer you legal consultations with extensive experience</h5>
+                        <p class="w-50 m-auto mt-4 banner-caption">This text is an example of text that can be replaced
+                            in the same space.
+                            This text has been generated from the Arabic text generator, where you can generate text
+                            like this or many
+                            other texts in addition to increasing the number of characters generated by the application.
+                        </p>
+                        <a href="add-services-en.html" class="btn btn-outline-light mt-5 px-4 py-2">Book a
+                            Consultation</a>
                     </div>
 
                 </div>
@@ -445,7 +446,6 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-
         </div>
     </div>
     <!-- End banner  -->
@@ -461,32 +461,39 @@
                     fill="#0CB2C2" />
             </svg>
 
-            <div class="col-md-4 about-img">
-                <img class="img-fluid" src="images/about-us/about-us.png" alt="about-us">
-            </div>
+
             <div class="col-md-8 about-caption">
-                <h3 class="text-info mr-2">من نحن</h3>
-                <p class="mr-2">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                    العربى، حيث
-                    يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
-                    التطبيق.هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
-                    العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى
-                    يولدها التطبيق.</p>
+                <h3 class="text-info mr-2">Who We Are</h3>
+                <p class="mr-2">This text is an example of text that can be replaced in the same space. This text has
+                    been generated
+                    from the Arabic text generator, where you can generate text like this or many other texts in
+                    addition to
+                    increasing the number of characters generated by the application. This text is an example of text
+                    that can be
+                    replaced in the same space. This text has been generated from the Arabic text generator, where you
+                    can generate
+                    text like this or many other texts in addition to increasing the number of characters generated by
+                    the
+                    application.</p>
 
                 <div class="d-flex flex-column align-items-start mr-2">
                     <div class="mb-2">
-                        <img class="bg-info ml-3 p-1" src="images/about-us/icons/law.png" alt="about-us/icons">
-                        <span class="text-info">خبرة أكثر من 20 عام</span>
+                        <img class="bg-info mr-3 p-1" src="../images/about-us/icons/law.png" alt="about-us/icons">
+                        <span class="text-info">More than 20 years of experience</span>
                     </div>
                     <div class="mb-2">
-                        <img class="bg-info ml-3 p-1" src="images/about-us/icons/location.png" alt="about-us/icons">
-                        <span class="text-info">الرياض - طريق الأمير محمد</span>
+                        <img class="bg-info mr-3 p-1" src="../images/about-us/icons/location.png" alt="about-us/icons">
+                        <span class="text-info">Riyadh - Prince Mohammed Road</span>
                     </div>
                     <div class="mb-2">
-                        <img class="bg-info ml-3 p-1" src="images/about-us/icons/call.png" alt="about-us/icons">
-                        <span class="text-info">9556515</span>
+                        <img class="bg-info mr-3 p-1" src="../images/about-us/icons/call.png" alt="about-us/icons">
+                        <span class="text-info">+966 56126002</span>
                     </div>
                 </div>
+            </div>
+
+            <div class="col-md-4 about-img">
+                <img class="img-fluid" src="../images/about-us/about-us.png" alt="about-us">
             </div>
         </div>
     </div>
@@ -497,33 +504,35 @@
         <div class="row">
             <div class="col-md-12 col-lg-4 vision-img position-relative">
                 <div class="all-vision"></div>
-                <img class="position-absolute icon" src="images/vision/icons/v-1.png" alt="vision">
-                <h4 class="position-absolute">الرؤية</h4>
+                <img class="position-absolute icon" src="../images/vision/icons/v-1.png" alt="vision">
+                <h4 class="position-absolute">Vision</h4>
                 <p class="position-absolute text-muted">
-                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
-                    يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
+                    This is an example text that can be replaced in the same space. This text has been generated from
+                    the Arabic text generator, where you can generate text like this or many other texts in addition to
+                    increasing the number
                 </p>
             </div>
             <div class="col-md-12 col-lg-4 vision-img position-relative">
                 <div class="all-vision"></div>
-                <img class="position-absolute icon" src="images/vision/icons/v-1.png" alt="vision">
-                <h4 class="position-absolute">الرؤية</h4>
+                <img class="position-absolute icon" src="../images/vision/icons/v-1.png" alt="vision">
+                <h4 class="position-absolute">Vision</h4>
                 <p class="position-absolute text-muted">
-                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
-                    يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
+                    This is an example text that can be replaced in the same space. This text has been generated from
+                    the Arabic text generator, where you can generate text like this or many other texts in addition to
+                    increasing the number
                 </p>
             </div>
             <div class="col-md-12 col-lg-4 vision-img position-relative">
                 <div class="all-vision"></div>
-                <img class="position-absolute icon" src="images/vision/icons/v-1.png" alt="vision">
-                <h4 class="position-absolute">الرؤية</h4>
+                <img class="position-absolute icon" src="../images/vision/icons/v-1.png" alt="vision">
+                <h4 class="position-absolute">Vision</h4>
                 <p class="position-absolute text-muted">
-                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث
-                    يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
+                    This is an example text that can be replaced in the same space. This text has been generated from
+                    the Arabic text generator, where you can generate text like this or many other texts in addition to
+                    increasing the number
                 </p>
             </div>
         </div>
-
 
         <svg class="overlay-banner-circle-vision2" width="147" height="150" viewBox="0 0 147 150" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -548,8 +557,8 @@
         <div class="row">
             <div class="emploee-caption">
                 <div class="main-title mt-5 pt-5 text-center">
-                    <h3>فريق العمل</h3>
-                    <p class="text-white">تعرف على فريق العمل لدينا</p>
+                    <h3>Our Team</h3>
+                    <p class="text-white">Get to know our team</p>
                 </div>
             </div>
             <!-- start swiper  -->
@@ -557,13 +566,14 @@
                 <swiper-slide>
                     <div class=" emploee-caption-card">
                         <div class="card">
-                            <img src="images/empolee/emploee.png" class="card-img-top" alt="emploee">
+                            <img src="../images/empolee/emploee.png" class="card-img-top" alt="employee">
                             <div class="card-body text-center">
-                                <h6 class="card-text text-info fw-bold">خالد محمد</h6>
-                                <p class="card-text text-dark fw-bold">هذا النص هو مثال لنص يمكن أن يستبدل في نفس
-                                    المساحة،
-                                    لقد
-                                    تم توليد هذا </p>
+                                <h6 class="card-text text-info fw-bold">Khaled Mohammed</h6>
+                                <p class="card-text text-dark fw-bold">This is an example text that can be replaced in
+                                    the
+                                    same space. This text has been generated from the Arabic text generator, where you
+                                    can generate text like this or many other texts in addition to increasing the
+                                    number.</p>
                             </div>
                         </div>
                     </div>
@@ -571,13 +581,14 @@
                 <swiper-slide>
                     <div class=" emploee-caption-card">
                         <div class="card">
-                            <img src="images/empolee/emploee.png" class="card-img-top" alt="emploee">
+                            <img src="../images/empolee/emploee.png" class="card-img-top" alt="employee">
                             <div class="card-body text-center">
-                                <h6 class="card-text text-info fw-bold">خالد محمد</h6>
-                                <p class="card-text text-dark fw-bold">هذا النص هو مثال لنص يمكن أن يستبدل في نفس
-                                    المساحة،
-                                    لقد
-                                    تم توليد هذا </p>
+                                <h6 class="card-text text-info fw-bold">Khaled Mohammed</h6>
+                                <p class="card-text text-dark fw-bold">This is an example text that can be replaced in
+                                    the
+                                    same space. This text has been generated from the Arabic text generator, where you
+                                    can generate text like this or many other texts in addition to increasing the
+                                    number.</p>
                             </div>
                         </div>
                     </div>
@@ -585,13 +596,14 @@
                 <swiper-slide>
                     <div class=" emploee-caption-card">
                         <div class="card">
-                            <img src="images/empolee/emploee.png" class="card-img-top" alt="emploee">
+                            <img src="../images/empolee/emploee.png" class="card-img-top" alt="employee">
                             <div class="card-body text-center">
-                                <h6 class="card-text text-info fw-bold">خالد محمد</h6>
-                                <p class="card-text text-dark fw-bold">هذا النص هو مثال لنص يمكن أن يستبدل في نفس
-                                    المساحة،
-                                    لقد
-                                    تم توليد هذا </p>
+                                <h6 class="card-text text-info fw-bold">Khaled Mohammed</h6>
+                                <p class="card-text text-dark fw-bold">This is an example text that can be replaced in
+                                    the
+                                    same space. This text has been generated from the Arabic text generator, where you
+                                    can generate text like this or many other texts in addition to increasing the
+                                    number.</p>
                             </div>
                         </div>
                     </div>
@@ -599,94 +611,56 @@
                 <swiper-slide>
                     <div class=" emploee-caption-card">
                         <div class="card">
-                            <img src="images/empolee/emploee.png" class="card-img-top" alt="emploee">
+                            <img src="../images/empolee/emploee.png" class="card-img-top" alt="employee">
                             <div class="card-body text-center">
-                                <h6 class="card-text text-info fw-bold">خالد محمد</h6>
-                                <p class="card-text text-dark fw-bold">هذا النص هو مثال لنص يمكن أن يستبدل في نفس
-                                    المساحة،
-                                    لقد
-                                    تم توليد هذا </p>
+                                <h6 class="card-text text-info fw-bold">Khaled Mohammed</h6>
+                                <p class="card-text text-dark fw-bold">This is an example text that can be replaced in
+                                    the
+                                    same space. This text has been generated from the Arabic text generator, where you
+                                    can generate text like this or many other texts in addition to increasing the
+                                    number.</p>
                             </div>
                         </div>
                     </div>
                 </swiper-slide>
-
-
             </swiper-container>
-
-            <!-- <div class="col-md-4 emploee-caption-card">
-                <div class="card">
-                    <img src="images/empolee/emploee.png" class="card-img-top" alt="emploee">
-                    <div class="card-body text-center">
-                        <h6 class="card-text text-info fw-bold">خالد محمد</h6>
-                        <p class="card-text text-dark fw-bold">هذا النص هو مثال لنص يمكن أن يستبدل في نفس
-                            المساحة،
-                            لقد
-                            تم توليد هذا </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 emploee-caption-card">
-                <div class="card">
-                    <img src="images/empolee/emploee.png" class="card-img-top" alt="emploee">
-                    <div class="card-body text-center">
-                        <h6 class="card-text text-info fw-bold">خالد محمد</h6>
-                        <p class="card-text text-dark fw-bold">هذا النص هو مثال لنص يمكن أن يستبدل في نفس
-                            المساحة،
-                            لقد
-                            تم توليد هذا </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 emploee-caption-card">
-                <div class="card">
-                    <img src="images/empolee/emploee.png" class="card-img-top" alt="emploee">
-                    <div class="card-body text-center">
-                        <h6 class="card-text text-info fw-bold">خالد محمد</h6>
-                        <p class="card-text text-dark fw-bold">هذا النص هو مثال لنص يمكن أن يستبدل في نفس
-                            المساحة،
-                            لقد
-                            تم توليد هذا </p>
-                    </div>
-                </div>
-            </div> -->
 
             <!-- start partner  -->
 
             <div class="main-title my-5 pt-5 text-center">
-                <h3>شركاء النجاح</h3>
+                <h3>Success Partners</h3>
             </div>
-
-            <div class="col-md-3 mb-3 position-relative  text-center">
-                <div class="partner">
-                    <img src="images/partner/partner-background.png" class="img-fluid" alt="partner">
-                    <img class="position-absolute icon w-50 img-fluid" src="images/partner/p-4.png" alt="partner">
+            <div class="d-flex justify-content-center align-items-center partner-section">
+                <div class="col-md-3 mb-3 position-relative  text-center">
+                    <div class="partner">
+                        <img src="../images/partner/partner-background.png" class="img-fluid" alt="partner">
+                        <img class="position-absolute icon w-50 img-fluid" src="../images/partner/p-4.png"
+                            alt="partner">
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-md-3 mb-3 text-center">
-                <div class="position-relative partner">
-                    <img src="images/partner/partner-background.png" class="img-fluid" alt="partner">
-                    <img class="position-absolute icon w-50" src="images/partner/p-3.png" class="img-fluid"
-                        alt="partner">
+                <div class="col-md-3 mb-3 text-center">
+                    <div class="position-relative partner">
+                        <img src="../images/partner/partner-background.png" class="img-fluid" alt="partner">
+                        <img class="position-absolute icon w-50" src="../images/partner/p-3.png" class="img-fluid"
+                            alt="partner">
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-md-3 mb-3 text-center">
-                <div class="position-relative partner">
-                    <img src="images/partner/partner-background.png" class="img-fluid" alt="partner">
-                    <img class="position-absolute icon w-50" src="images/partner/p-1.png" class="img-fluid"
-                        alt="partner">
+                <div class="col-md-3 mb-3 text-center">
+                    <div class="position-relative partner">
+                        <img src="../images/partner/partner-background.png" class="img-fluid" alt="partner">
+                        <img class="position-absolute icon w-50" src="../images/partner/p-1.png" class="img-fluid"
+                            alt="partner">
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-md-3 mb-3 text-center">
-                <div class="position-relative partner">
-                    <img src="images/partner/partner-background.png" class="img-fluid" alt="partner">
-                    <img class="position-absolute icon w-50" src="images/partner/p-2.png" class="img-fluid"
-                        alt="partner">
+                <div class="col-md-3 mb-3 text-center">
+                    <div class="position-relative partner">
+                        <img src="../images/partner/partner-background.png" class="img-fluid" alt="partner">
+                        <img class="position-absolute icon w-50" src="../images/partner/p-2.png" class="img-fluid"
+                            alt="partner">
+                    </div>
                 </div>
             </div>
 
@@ -706,34 +680,35 @@
         <div class="row">
 
             <div class="col-md-6 text-info">
-                <img class="" src="images/contact-us/contact-us.png" alt="">
-                <h4 class="fw-bold mt-5">تواصل معنا</h4>
-                <h5>وتابع استشارتك القانونية</h5>
-                <p class="text-dark mt-5">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
-                    هذا النص من
-                    مولد النص العربى، حيث
-                    يمكنك أن تولد مثل هذا النص أو العديد .</p>
-                <div class="d-flex mt-4 email-phone">
-                    <div class="ml-5">
-                        <span class="ml-3 mb-2">+966 56126002</span>
-                        <i class="fas fa-phone-volume"></i>
-                    </div>
-                    <div>
-                        <span class="ml-3">info@bmplf.com</span>
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 text-info">
-                <img class="img-fluid" src="images/contact-us/location.png" alt="">
-                <h4 class="fw-bold mt-5">موقعنا</h4>
-                <p class="text-dark">العاصمة - الرياض - شارع 55 - بناية 70</p>
+                <img class="img-fluid" src="../images/contact-us/location.png" alt="">
+                <h4 class="fw-bold mt-5">Our Location</h4>
+                <p class="text-dark">Riyadh - Capital - Street 55 - Building 70</p>
 
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38575.82083348347!2d46.72106332228503!3d24.60264624968502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f0f771ea8d781%3A0xf050d05b69146511!2z2LnZhdin2LHYqSA3MA!5e0!3m2!1sar!2seg!4v1716250887640!5m2!1sar!2seg"
                     class="img-fluid" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="col-md-6 text-info">
+                <img class="" src="../images/contact-us/contact-us.png" alt="">
+                <h4 class="fw-bold mt-5">Contact Us</h4>
+                <h5>And continue your legal consultation</h5>
+                <p class="text-dark mt-5">This text is an example that can be replaced in the same space. This text
+                    has been
+                    generated from an Arabic text generator, where you can generate such text or many others in
+                    addition to
+                    increasing the number of characters generated by the application.</p>
+                <div class="d-flex mt-4 email-phone">
+                    <div class="mr-5">
+                        <i class="fas fa-phone-volume"></i>
+                        <a href="tel:+966 56126002" class="ml-3 mb-2 text-info">+966 56126002</a>
+                    </div>
+                    <div class="mr-5">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@bmplf.com" class="ml-3 mb-2 text-info">info@bmplf.com</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -743,7 +718,7 @@
     <div class="container-fluid footer">
         <div class="row">
             <div class="col-md-12">
-                <img class="img-fluid mb-3" src="images/logo.png" alt="">
+                <img class="img-fluid mb-3" src="../images/logo.png" alt="logo">
                 <p class="footer-caption">BMP Law Firm : Your trusted partner for exceptional legal services in Saudi
                     Arabia and
                     beyond. Our
@@ -752,66 +727,91 @@
                     contribute
                     to <br> the Kingdom's Vision 2030 for a prosperous future.
                 </p>
-                <div class="footer-links">
 
-                    <a href="index.html">
-                        <span class="m-2">الرئيسية</span>
+
+                <div class="footer-links">
+                    <a href="index-en.html">
+                        <span class="m-2">Home</span>
                     </a>
                     <span>|</span>
-                    <a href="services.html">
-                        <span class="m-2">الخدمات</span>
+                    <a href="services-en.html">
+                        <span class="m-2">Services</span>
                     </a>
                     <span>|</span>
-                    <a href="add-services.html">
-                        <span class="m-2">طلب خدمة</span>
+                    <a href="add-services-en.html">
+                        <span class="m-2">add Service</span>
                     </a>
                     <span>|</span>
-                    <a href="about-us-page.html">
-                        <span class="m-2">نبذة</span>
+                    <a href="about-us-page-en.html">
+                        <span class="m-2">About Us</span>
                     </a>
                     <span>|</span>
-                    <a href="contact-us.html">
-                        <span class="m-2">تواصل معنا</span>
+                    <a href="contact-us-en.html">
+                        <span class="m-2">Contact Us</span>
                     </a>
                 </div>
 
                 <hr class="footer-hr">
                 <div class="footer-contact d-flex justify-content-between align-items-center">
-                    <div class="d-flex email-phone text-info">
-                        <div class="ml-5 my-3">
-                            <a href="tel:+966 56126002" class="ml-3 mb-2 text-info">+966 56126002</a>
-                            <i class="fas fa-phone-volume"></i>
-                        </div>
-                        <div class="ml-5 my-3">
-                            <a href="mailto:info@bmplf.com" class="ml-3 mb-2 text-info">info@bmplf.com</a>
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                    </div>
                     <div>
-                        <p>جميع العقوق محفوظة لمكتب BMP 2024</p>
+                        <p>All rights reserved to BMP Office 2024</p>
                     </div>
+                    <div class="d-flex email-phone text-info">
+                        <div class="mr-5 my-3">
+                            <i class="fas fa-phone-volume"></i>
+                            <a href="tel:+966 56126002" class="mr-3 mb-2 text-info">+966 56126002</a>
+                        </div>
+                        <div class="mr-5 my-3">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@bmplf.com" class="mr-3 mb-2 text-info">info@bmplf.com</a>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
         </div>
     </div>
     <!-- End footer  -->
 
+    <script>
+        document.getElementById('language-select').addEventListener('change', function () {
+            const selectedLanguage = this.value;
+            const head = document.head;
+            let linkElement = document.getElementById('ltr-css');
 
-    <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
+            if (selectedLanguage === 'en') {
+                if (!linkElement) {
+                    linkElement = document.createElement('link');
+                    linkElement.rel = 'stylesheet';
+                    linkElement.href = '../css/style-ltr.css';
+                    linkElement.id = 'ltr-css';
+                    head.appendChild(linkElement);
+                }
+                window.location.href = '/en/index-en.html';
+            } else if (selectedLanguage === 'ar') {
+                if (linkElement) {
+                    linkElement.remove();
+                }
+                window.location.href = '/ar/index.html';
+            }
+        });
+    </script>
+
     <!-- swiper js  -->
-    <script src="./js/swiper-element-bundle.min.js"></script>
+    <script src="../js/swiper-element-bundle.min.js"></script>
     <!-- mdb js  -->
-    <script src="./js/mdb.min.js"></script>
+    <script src="../js/mdb.min.js"></script>
     <!-- fontawesome  -->
-    <script src="./js/font-awesome.js"></script>
+    <script src="../js/font-awesome.js"></script>
     <!-- jquery-js  -->
-    <script src="./js/jquery.js"></script>
+    <script src="../js/jquery.js"></script>
     <!-- popper-js  -->
-    <script src="./js/popper.js"></script>
+    <script src="../js/popper.js"></script>
     <!-- bootstrab-js  -->
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <!-- main-js  -->
-    <script src="./js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

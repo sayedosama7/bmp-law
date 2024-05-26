@@ -8,18 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
-    <!-- animate-css  -->
-    <link rel="stylesheet" href="./css/animate.min.css">
+    <!-- swiper css  -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
     <!-- fontawesome  -->
-    <link rel="stylesheet" href="./css/fontawesome.css">
+    <link rel="stylesheet" href="../css/fontawesome.css">
     <!-- bootstrap-css  -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- mdb-css  -->
-    <link rel="stylesheet" href="./css/mdb.min.css">
+    <link rel="stylesheet" href="../css/mdb.min.css">
     <!-- style-css -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-ltr.css">
     <!-- fav-icon  -->
-    <link rel="shortcut icon" href="images/lawer-icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/law/lawer-icon.png" type="image/x-icon">
     <title>BIN MAHMOUD PARTNERS</title>
 </head>
 
@@ -33,48 +34,47 @@
                 <!-- start navbar  -->
 
                 <nav class="navbar navbar-expand-lg bg-transparent">
-                    <a class="navbar-brand text-white" href="index.html">
-                        <img class="img-logo" src="images/logo.png" alt="logo">
+                    <a class="navbar-brand text-white" href="index-en.html">
+                        <img class="img-logo" src="../images/logo.png" alt="logo">
                     </a>
-                    <a href="lawerpage.html" class="navbar-toggler mt-3" type="button" data-toggle="collapse"
+                    <button class="navbar-toggler mt-3" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="text-white border px-2"><i class="fa-solid fa-bars"></i></span>
-                    </a>
+                    </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto">
-                            <li class="nav-item  ml-2 position-relative">
-                                <a class="nav-link text-white" href="index.html">الرئيسية</a>
+                            <li class="nav-item ml-2 position-relative">
+                                <a class="nav-link text-white" href="index-en.html">home</a>
                                 <div class="active-indicator"></div>
                             </li>
                             <li class="nav-item ml-2">
-                                <a class="nav-link text-white" href="services.html">الخدمات</a>
+                                <a class="nav-link text-white" href="services-en.html">services</a>
                             </li>
                             <li class="nav-item ml-2">
-                                <a class="nav-link text-white" href="add-services.html">طلب خدمة</a>
+                                <a class="nav-link text-white" href="add-services-en.html">add services</a>
                             </li>
                             <li class="nav-item ml-2">
-                                <a class="nav-link text-white" href="about-us-page.html">نبذة</a>
+                                <a class="nav-link text-white" href="about-us-page-en.html">about us</a>
                             </li>
                             <li class="nav-item ml-2">
-                                <a class="nav-link text-white" href="contact-us.html">تواصل معنا</a>
+                                <a class="nav-link text-white" href="contact-us-en.html">contact us</a>
                             </li>
                         </ul>
                         <div class="form-inline my-2 my-lg-0 select-lang">
-                            <select name="" id="">
-                                <option value="">EN</option>
-                                <option value="">AR</option>
+                            <select name="language" id="language-select" class="form-control">
+                                <option value="en" selected>EN</option>
+                                <option value="ar">AR</option>
                             </select>
                         </div>
                     </div>
-
                 </nav>
-
             </div>
 
             <!-- overlay  -->
-            <img class="overlay-banner" src="images/banner/overlay.png" alt="">
+            <img class="overlay-banner" src="../images/banner/overlay.png" alt="overlay">
+            <img class="overlay-banner2" src="../images/banner/overlay.png" alt="overlay">
             <svg class="overlay-banner-dots" width="148" height="135" viewBox="0 0 148 135" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -406,68 +406,156 @@
                         fill="#130D3A" />
                 </g>
             </svg>
-
-            <img class="overlay-banner2" src="images/banner/overlay.png" alt="">
+            <img class="overlay-banner2" src="../images/banner/overlay.png" alt="overlay">
 
             <!-- start banner carousel -->
 
-            <h3 class="text-info mb-2 text-center services-caption">طلب خدمة</h3>
+            <h3 class="text-info mb-2 text-center services-caption">Services</h3>
             <div class="d-flex justify-content-center align-items-center text-white">
-                <h5>الرئيسية</h5>
-                <i class="fas fa-angle-left mx-2 fa-xl mb-2"></i>
-                <h5 class="text-info ">طلب خدمة</h5>
+                <h5>Home</h5>
+                <i class="fas fa-angle-right mx-2 fa-xl mb-2"></i>
+                <h5 class="text-info">Services</h5>
             </div>
-
         </div>
     </div>
     <!-- End banner  -->
     <!-- End navber and banner  -->
 
-    <!-- start form  -->
-    <div class="container my-5 add-services">
+    <!-- start services  -->
+    <div class="container services">
         <div class="row">
             <div class="col-md-12">
-                <form action="" class="form-add-services" id="serviceForm" onsubmit="return validateForm()">
-
-                    <div class="form-group mb-4">
-                        <label for="الاسم">الاسم</label>
-                        <input type="text" class="form-control" placeholder="الاسم" name="username" required>
-                    </div>
-
-                    <div class="form-group mb-4">
-                        <label for="رقم-الهاتف">رقم الهاتف</label>
-                        <input type="text" class="form-control" placeholder="رقم الهاتف" name="phone" required>
-                    </div>
-
-                    <div class="form-group mb-4">
-                        <label for="البريد-الالكتروني">البريد الالكتروني</label>
-                        <input type="email" class="form-control" placeholder="البريد الالكتروني" name="email" required>
-                    </div>
-
-                    <div class="form-group mb-4">
-                        <label for="يوم-الحجز">يوم الحجز</label>
-                        <input type="date" class="form-control" placeholder="يوم الحجز" name="reserve_day" required>
-                    </div>
-
-                    <div class="form-group mb-4">
-                        <label for="التفاصيل">التفاصيل</label>
-                        <textarea class="form-control pb-5 pt-3 mb-5" name="description-message"
-                            placeholder="اكتب التفاصيل" required></textarea>
-                    </div>
-
-                    <button class="btn add-btn btn-block py-3" type="submit">ارسال</button>
-
-                </form>
+                <div class="main-title mt-5 pt-5 text-center">
+                    <h3>We Offer Many Services <br>
+                        With Long Experience</h3>
+                </div>
             </div>
+
+            <div class="col-md-4 my-3">
+                <div class="services-card p-4 text-center">
+                    <svg class="law" width="86" height="86" viewBox="0 0 86 86" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_297_93)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M73.0496 37.3796L48.8785 13.2035L51.7621 10.3251L47.1231 5.67599L25.6383 27.1507L30.2924 31.7947L32.9736 29.1135L42.8636 38.9985L-0.313477 82.1755L3.88535 86.3693L47.0523 43.1973L57.1396 53.2795L54.4635 55.9658L59.1075 60.6047L80.6277 39.0895L75.9888 34.4455L73.0496 37.3796Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_297_93">
+                                <rect width="86" height="86" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <h3 class="text-dark">Law</h3>
+                    <a href="law-en.html" class="btn services-btn">More Details</a>
+                    <p class="text-muted">This is an example text that can be replaced in the same space. This text has
+                        been generated from an Arabic text generator, where you can generate similar text </p>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 my-3">
+                <div class="services-card p-4 text-center">
+                    <svg class="law law3" width="86" height="86" viewBox="0 0 116 116"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M100.389 27.1379C100.388 29.7498 99.3497 32.2543 97.5034 34.1017C95.6571 35.9491 93.1532 36.9886 90.5414 36.9918H87.4521V88.2516C87.4489 90.8624 86.4103 93.3653 84.5642 95.2114C82.718 97.0576 80.2151 98.0961 77.6043 98.0994H25.4592C24.1656 98.0994 22.8846 97.8446 21.6895 97.3495C20.4943 96.8545 19.4084 96.1289 18.4936 95.2141C17.5789 94.2994 16.8533 93.2134 16.3582 92.0183C15.8632 90.8231 15.6084 89.5422 15.6084 88.2485C15.6084 86.9549 15.8632 85.6739 16.3582 84.4788C16.8533 83.2836 17.5789 82.1977 18.4936 81.2829C19.4084 80.3682 20.4943 79.6426 21.6895 79.1475C22.8846 78.6525 24.1656 78.3977 25.4592 78.3977H28.5424V27.1379C28.5424 24.5239 29.5804 22.0169 31.4282 20.168C33.276 18.319 35.7823 17.2795 38.3963 17.2779H90.5352C93.1482 17.2795 95.6536 18.3182 97.5012 20.1658C99.3488 22.0134 100.388 24.5189 100.389 27.1318V27.1379ZM25.4592 91.3347H68.2388C67.5783 89.3324 67.5783 87.1708 68.2388 85.1684H25.4715C24.6537 85.1684 23.8695 85.4932 23.2913 86.0715C22.7131 86.6497 22.3883 87.4339 22.3883 88.2516C22.3883 89.0693 22.7131 89.8535 23.2913 90.4317C23.8695 91.0099 24.6537 91.3347 25.4715 91.3347H25.4592ZM80.6814 27.1379C80.6799 26.0908 80.8448 25.0501 81.1698 24.0547H38.4024C37.716 24.0535 37.0493 24.2837 36.5098 24.708L36.4976 24.7141C36.1288 25.001 35.8307 25.3687 35.6264 25.7889C35.4221 26.2091 35.3171 26.6707 35.3192 27.1379V78.3977H74.0083C74.8515 78.388 75.673 78.6648 76.3384 79.1827C77.0039 79.7007 77.4738 80.4291 77.6715 81.2488C77.9034 82.0334 77.8799 82.8714 77.6045 83.6418C77.329 84.4122 76.8158 85.0751 76.139 85.5347C75.6607 85.7945 75.2597 86.1763 74.9767 86.6412C74.6937 87.1062 74.5389 87.6378 74.5279 88.1819C74.5169 88.7261 74.6502 89.2635 74.9142 89.7395C75.1782 90.2155 75.5635 90.6132 76.0309 90.892C76.4984 91.1708 77.0313 91.321 77.5756 91.3271C78.1199 91.3333 78.6561 91.1952 79.1297 90.927C79.6033 90.6588 79.9975 90.27 80.2722 89.8C80.5469 89.3301 80.6922 88.7959 80.6936 88.2516L80.6814 27.1379ZM75.4308 35.9173H40.2645V42.6758H75.4308V35.9173ZM75.4308 49.7152H40.2645V56.4737H75.4308V49.7152ZM75.4308 63.5131H40.2645V70.2777H75.4308V63.5131ZM93.6184 27.1379C93.6168 26.3207 93.2914 25.5374 92.7136 24.9596C92.1357 24.3817 91.3525 24.0563 90.5352 24.0547C89.8485 24.0516 89.1812 24.2819 88.6426 24.708H88.6304C88.26 24.9952 87.9606 25.3637 87.7552 25.785C87.5498 26.2063 87.444 26.6692 87.446 27.1379V30.2211H90.5352C91.3525 30.2194 92.1357 29.8941 92.7136 29.3162C93.2914 28.7384 93.6168 27.9551 93.6184 27.1379Z"
+                            fill="" />
+                    </svg>
+                    <h3 class="text-dark">Documentation</h3>
+                    <a href="law-en.html" class="btn services-btn">More Details</a>
+                    <p class="text-muted">This is an example text that can be replaced in the same space. This text has
+                        been generated from an Arabic text generator, where you can generate similar text </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 my-3">
+                <div class="services-card p-4 text-center">
+                    <svg class="law law3 law4" width="86" height="86" viewBox="0 0 73 79" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M72.4546 31.042L61.8458 7.38627L61.8449 7.38435L61.8311 7.3536C61.7955 7.27446 61.7533 7.20013 61.7065 7.12932C61.694 7.1101 61.6789 7.0928 61.6658 7.07453C61.6238 7.01622 61.5786 6.96144 61.5299 6.90985C61.5107 6.88967 61.4912 6.86981 61.471 6.85058C61.4172 6.79964 61.3605 6.75254 61.3002 6.70961C61.2845 6.69808 61.2701 6.68526 61.2538 6.67437C61.1782 6.62439 61.0981 6.58145 61.0148 6.54461C60.991 6.53404 60.9664 6.52635 60.942 6.51706C60.8767 6.49207 60.8103 6.47124 60.7418 6.4549C60.7136 6.44817 60.6857 6.44144 60.6572 6.43632C60.5633 6.41902 60.4678 6.40748 60.3701 6.40748H41.6504C41.33 5.41075 40.7075 4.55114 39.893 3.92862V1.60195C39.893 0.717354 39.1757 0 38.2911 0H35.3006C34.416 0 33.6986 0.717354 33.6986 1.60195V3.96675C32.9088 4.58607 32.3059 5.43157 31.9922 6.4078H13.2215C13.1238 6.4078 13.0286 6.41966 12.9344 6.43664C12.9056 6.44176 12.8781 6.44849 12.8499 6.45522C12.7813 6.47156 12.7147 6.49239 12.6496 6.51738C12.6253 6.52667 12.6006 6.53436 12.5769 6.54493C12.4936 6.58177 12.4135 6.62439 12.3379 6.67469C12.3215 6.68558 12.3071 6.6984 12.2914 6.70993C12.2312 6.75286 12.1745 6.79964 12.1207 6.8509C12.1002 6.87013 12.0809 6.88999 12.0614 6.91017C12.0124 6.96176 11.9675 7.01686 11.9255 7.07485C11.9121 7.09344 11.8973 7.11074 11.8848 7.12964C11.8381 7.20045 11.7958 7.27478 11.7602 7.35392L11.7464 7.38467L11.7455 7.38659L1.09891 31.1259C0.918854 31.3851 0.811523 31.6988 0.811523 32.0384C0.811523 38.8813 6.37862 44.4484 13.2215 44.4484C20.0644 44.4484 25.6315 38.8813 25.6315 32.0384C25.6315 31.6988 25.5245 31.3854 25.3441 31.1262L15.6956 9.61106H32.031C32.3536 10.5418 32.938 11.3489 33.6983 11.9454V49.4322H19.4928C18.8934 49.4322 18.3439 49.767 18.069 50.2998L13.6624 58.8437C13.4064 59.3403 13.4275 59.9346 13.7181 60.4117C14.009 60.8887 14.5271 61.18 15.0862 61.18H58.5051C58.5051 61.18 58.509 61.18 58.5115 61.18C59.3961 61.18 60.1135 60.4626 60.1135 59.578C60.1135 59.264 60.0231 58.9712 59.8671 58.7242L55.5217 50.2998C55.2468 49.767 54.6973 49.4322 54.0979 49.4322H39.8927V11.9836C40.6773 11.3835 41.2813 10.5623 41.611 9.61106H57.8958L48.1319 31.3829C48.1293 31.3886 48.128 31.3944 48.1255 31.4002C48.1181 31.4175 48.1126 31.4354 48.1056 31.453C48.0768 31.5264 48.0537 31.6014 48.0361 31.677C48.0316 31.6968 48.0258 31.7161 48.022 31.7359C48.0043 31.8279 47.9954 31.9205 47.9941 32.0134C47.9941 32.022 47.9915 32.0297 47.9915 32.0384C47.9915 38.8813 53.5586 44.4484 60.4015 44.4484C67.2444 44.4484 72.8115 38.8813 72.8115 32.0384C72.8115 31.6597 72.6744 31.3162 72.4546 31.042ZM21.5235 30.4364H4.91957L13.2215 11.924L21.5235 30.4364ZM38.69 7.95593C38.69 8.98662 37.8515 9.82476 36.8211 9.82476C35.7904 9.82476 34.952 8.9863 34.952 7.95593C34.952 6.92523 35.7904 6.08709 36.8211 6.08709C37.8515 6.08677 38.69 6.92523 38.69 7.95593ZM52.0675 30.4364L60.3698 11.924L68.6718 30.4364H52.0675Z" />
+                    </svg>
+
+                    <h3 class="text-dark services-card-title2">Legal Consultations</h3>
+                    <a href="law-en.html" class="btn services-btn">More Details</a>
+                    <p class="text-muted">This is an example text that can be replaced in the same space. This text has
+                        been generated from an Arabic text generator, where you can generate similar text </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 my-3">
+                <div class="services-card p-4 text-center">
+                    <svg class='law law2 law4' width="86" height="86" viewBox="0 0 74 74" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M28.6531 3.98642C29.2313 3.4082 30.0156 3.08334 30.8333 3.08334H55.5C60.6088 3.08334 64.75 7.22472 64.75 12.3333V24.6667C64.75 26.3695 63.3696 27.75 61.6667 27.75C59.9637 27.75 58.5833 26.3695 58.5833 24.6667V12.3333C58.5833 10.6305 57.2029 9.25001 55.5 9.25001H33.9167V24.6667C33.9167 26.3695 32.5363 27.75 30.8333 27.75H15.4167V61.6667C15.4167 63.3696 16.7971 64.75 18.5 64.75H30.8333C32.5363 64.75 33.9167 66.1304 33.9167 67.8333C33.9167 69.5363 32.5363 70.9167 30.8333 70.9167H18.5C13.3914 70.9167 9.25 66.7755 9.25 61.6667V24.6667C9.25 23.8489 9.57486 23.0647 10.1531 22.4864L28.6531 3.98642ZM19.7771 21.5833H27.75V13.6105L19.7771 21.5833ZM62.1958 57.8353C63.8099 55.3983 64.75 52.4756 64.75 49.3333C64.75 40.819 57.8476 33.9167 49.3333 33.9167C40.819 33.9167 33.9167 40.819 33.9167 49.3333C33.9167 57.8477 40.819 64.75 49.3333 64.75C52.4756 64.75 55.3983 63.8099 57.8353 62.1958L65.6531 70.0136C66.8571 71.2176 68.8095 71.2176 70.0136 70.0136C71.2176 68.8095 71.2176 66.8572 70.0136 65.6531L62.1958 57.8353ZM40.0833 49.3333C40.0833 44.2246 44.2246 40.0833 49.3333 40.0833C54.4421 40.0833 58.5833 44.2246 58.5833 49.3333C58.5833 54.4421 54.4421 58.5833 49.3333 58.5833C44.2246 58.5833 40.0833 54.4421 40.0833 49.3333Z" />
+                    </svg>
+                    <h3 class="text-dark services-card-title">Research and Studies Center</h3>
+                    <a href="law-en.html" class="btn services-btn">More Details</a>
+                    <p class="text-muted">This is an example text that can be replaced in the same space. This text has
+                        been generated from an Arabic text generator, where you can generate similar text </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 my-3">
+                <div class="services-card p-4 text-center">
+                    <svg class="law" width="86" height="86" viewBox="0 0 86 86" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_297_93)">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M73.0496 37.3796L48.8785 13.2035L51.7621 10.3251L47.1231 5.67599L25.6383 27.1507L30.2924 31.7947L32.9736 29.1135L42.8636 38.9985L-0.313477 82.1755L3.88535 86.3693L47.0523 43.1973L57.1396 53.2795L54.4635 55.9658L59.1075 60.6047L80.6277 39.0895L75.9888 34.4455L73.0496 37.3796Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_297_93">
+                                <rect width="86" height="86" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <h3 class="text-dark services-card-title2">Reconciliation Centers</h3>
+                    <a href="law-en.html" class="btn services-btn">More Details</a>
+                    <p class="text-muted">This is an example text that can be replaced in the same space. This text has
+                        been generated from an Arabic text generator, where you can generate similar text </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 my-3">
+                <div class="services-card p-4 text-center">
+                    <svg class='law law2' width="86" height="86" viewBox="0 0 84 84" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_297_13)">
+                            <path d="M75.25 59H8.75V66H75.25V59Z" />
+                            <path
+                                d="M77 66H7C6.07174 66 5.1815 66.3687 4.52513 67.0251C3.86875 67.6815 3.5 68.5717 3.5 69.5V73H80.5V69.5C80.5 68.5717 80.1313 67.6815 79.4749 67.0251C78.8185 66.3687 77.9283 66 77 66Z" />
+                            <path d="M24.5 31.5H17.5V59.5H24.5V31.5Z" />
+                            <path d="M45.5 31.5H38.5V59.5H45.5V31.5Z" />
+                            <path d="M66.5 31.5H59.5V59.5H66.5V31.5Z" />
+                            <path
+                                d="M78.575 23.45L42 7L5.425 23.45C4.85479 23.7586 4.37636 24.2125 4.03827 24.7658C3.70019 25.319 3.51448 25.9518 3.5 26.6V28C3.5 28.9283 3.86875 29.8185 4.52513 30.4749C5.1815 31.1313 6.07174 31.5 7 31.5H77C77.9283 31.5 78.8185 31.1313 79.4749 30.4749C80.1313 29.8185 80.5 28.9283 80.5 28V26.6C80.4855 25.9518 80.2998 25.319 79.9617 24.7658C79.6236 24.2125 79.1452 23.7586 78.575 23.45Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_297_13">
+                                <rect width="84" height="84" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <h3 class="text-dark">Arbitration</h3>
+                    <a href="law-en.html" class="btn services-btn">More Details</a>
+                    <p class="text-muted">This is an example text that can be replaced in the same space. This text has
+                        been generated from an Arabic text generator, where you can generate similar text </p>
+                </div>
+            </div>
+
         </div>
     </div>
-    <!-- End form  -->
+    <!-- End services  -->
 
     <!-- start footer  -->
     <div class="container-fluid footer">
         <div class="row">
             <div class="col-md-12">
-                <img class="img-fluid mb-3" src="images/logo.png" alt="">
+                <img class="img-fluid mb-3" src="../images/logo.png" alt="logo">
                 <p class="footer-caption">BMP Law Firm : Your trusted partner for exceptional legal services in Saudi
                     Arabia and
                     beyond. Our
@@ -476,44 +564,44 @@
                     contribute
                     to <br> the Kingdom's Vision 2030 for a prosperous future.
                 </p>
-                <div class="footer-links">
 
-                    <a href="index.html">
-                        <span class="m-2">الرئيسية</span>
+                <div class="footer-links">
+                    <a href="index-en.html">
+                        <span class="m-2">Home</span>
                     </a>
                     <span>|</span>
-                    <a href="services.html">
-                        <span class="m-2">الخدمات</span>
+                    <a href="services-en.html">
+                        <span class="m-2">Services</span>
                     </a>
                     <span>|</span>
-                    <a href="add-services.html">
-                        <span class="m-2">طلب خدمة</span>
+                    <a href="add-services-en.html">
+                        <span class="m-2">add Service</span>
                     </a>
                     <span>|</span>
-                    <a href="about-us-page.html">
-                        <span class="m-2">نبذة</span>
+                    <a href="about-us-page-en.html">
+                        <span class="m-2">About Us</span>
                     </a>
                     <span>|</span>
-                    <a href="contact-us.html">
-                        <span class="m-2">تواصل معنا</span>
+                    <a href="contact-us-en.html">
+                        <span class="m-2">Contact Us</span>
                     </a>
                 </div>
-
                 <hr class="footer-hr">
                 <div class="footer-contact d-flex justify-content-between align-items-center">
+                    <div>
+                        <p>All rights reserved to BMP Office 2024</p>
+                    </div>
                     <div class="d-flex email-phone text-info">
                         <div class="ml-5 my-3">
-                            <a href="tel:+966 56126002" class="ml-3 mb-2 text-info">+966 56126002</a>
                             <i class="fas fa-phone-volume"></i>
+                            <a href="tel:+966 56126002" class="ml-3 mb-2 text-info">+966 56126002</a>
                         </div>
                         <div class="ml-5 my-3">
-                            <a href="mailto:info@bmplf.com" class="ml-3 mb-2 text-info">info@bmplf.com</a>
                             <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@bmplf.com" class="ml-3 mb-2 text-info">info@bmplf.com</a>
                         </div>
                     </div>
-                    <div>
-                        <p>جميع العقوق محفوظة لمكتب BMP 2024</p>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -521,20 +609,44 @@
     <!-- End footer  -->
 
 
+    <script>
+        document.getElementById('language-select').addEventListener('change', function () {
+            const selectedLanguage = this.value;
+            const head = document.head;
+            let linkElement = document.getElementById('ltr-css');
+
+            if (selectedLanguage === 'en') {
+                if (!linkElement) {
+                    linkElement = document.createElement('link');
+                    linkElement.rel = 'stylesheet';
+                    linkElement.href = '../css/style-ltr.css';
+                    linkElement.id = 'ltr-css';
+                    head.appendChild(linkElement);
+                }
+                window.location.href = '/en/services-en.html';
+            } else if (selectedLanguage === 'ar') {
+                if (linkElement) {
+                    linkElement.remove();
+                }
+                window.location.href = '/ar/services.html';
+            }
+        });
+    </script>
+
     <!-- swiper js  -->
-    <script src="./js/swiper-element-bundle.min.js"></script>
+    <script src="../js/swiper-element-bundle.min.js"></script>
     <!-- mdb js  -->
-    <script src="./js/mdb.min.js"></script>
+    <script src="../js/mdb.min.js"></script>
     <!-- fontawesome  -->
-    <script src="./js/font-awesome.js"></script>
+    <script src="../js/font-awesome.js"></script>
     <!-- jquery-js  -->
-    <script src="./js/jquery.js"></script>
+    <script src="../js/jquery.js"></script>
     <!-- popper-js  -->
-    <script src="./js/popper.js"></script>
+    <script src="../js/popper.js"></script>
     <!-- bootstrab-js  -->
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <!-- main-js  -->
-    <script src="./js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
