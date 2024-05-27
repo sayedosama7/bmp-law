@@ -78,7 +78,7 @@ body {
 }
 
 body {
-    overflow: hidden;
+    overflow: auto;
     background-color: var(--main-color);
     transition: background-color 2s ease-out;
 }
@@ -155,4 +155,3 @@ body {
         left: 100%;
     }
 }
-

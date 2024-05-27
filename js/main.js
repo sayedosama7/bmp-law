@@ -62,30 +62,29 @@ function validateForm() {
 // swiper 
 const swiperEl = document.querySelector('swiper-container')
 Object.assign(swiperEl, {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  pagination: {
-    clickable: true,
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+        clickable: true,
     },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 40,
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+        },
     },
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 50,
-    },
-  },
 });
 swiperEl.initialize();
 
 // start loader 
-
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         document.querySelector('.initial-color').style.display = 'none';
@@ -96,7 +95,12 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         document.documentElement.style.setProperty('--main-color', '#17a2b8');
         document.body.classList.add("loaded");
+        document.body.style.overflow = 'auto';
+        document.querySelector('.loader-container').style.position = 'static';
+        document.querySelector('.loader-container').style.overflowX = 'hidden';
     }, 2500);
 });
+
+
 
 
