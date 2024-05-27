@@ -764,13 +764,12 @@
         </div>
     </div>
     <!-- End footer  -->
-    <div class="black-bar" id="blackBar"></div> <!-- شريط أسود -->
+    <div class="black-bar" id="blackBar"></div> 
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const languageSelect = document.getElementById('language-select');
 
-            // Check the current URL to set the selected option
             const currentUrl = window.location.href;
             if (currentUrl.includes('/en/')) {
                 languageSelect.value = 'en';

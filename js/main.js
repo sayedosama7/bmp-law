@@ -1,5 +1,5 @@
+
 $(document).ready(function () {
-    // Function to move active indicator
     function moveActiveIndicator($indicator, $link) {
         $indicator.css({
             width: $link.outerWidth(),
@@ -8,7 +8,6 @@ $(document).ready(function () {
         });
     }
 
-    // Function to set active class and move indicator
     function setActive($link) {
         var $parent = $link.closest('.nav-item');
         $('.navbar-nav .nav-item').removeClass('active');
@@ -19,7 +18,6 @@ $(document).ready(function () {
         moveActiveIndicator($indicator, $link);
     }
 
-    // Set active class and move indicator on click
     $('.navbar-nav .nav-link').click(function (e) {
         e.preventDefault();
         var $this = $(this);
@@ -30,7 +28,6 @@ $(document).ready(function () {
         }, 300);
     });
 
-    // Set active class based on the current URL
     function setActiveNavItem() {
         var currentPath = window.location.pathname.split("/").pop();
         $('.navbar-nav .nav-item').each(function () {
@@ -41,33 +38,28 @@ $(document).ready(function () {
         });
     }
 
-    // Initial setup
     setActiveNavItem();
 
-    // Adjust the active indicator on window resize
     $(window).resize(function () {
         setActiveNavItem();
     });
 });
 
+// validation 
 function validateForm() {
     var form = document.getElementById("serviceForm");
     if (form.checkValidity() === false) {
-        // Display error messages or styles for invalid fields
         return false;
     }
-    // Perform custom validation using JavaScript
-    // Example: Validate email format
     var email = document.getElementById("email").value;
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-        // Display error message or style for invalid email
         return false;
     }
-    // Additional custom validation for other fields
     return true;
 }
 
+// swiper 
 const swiperEl = document.querySelector('swiper-container')
 Object.assign(swiperEl, {
   slidesPerView: 1,
@@ -92,17 +84,17 @@ Object.assign(swiperEl, {
 });
 swiperEl.initialize();
 
+// start loader 
+
 document.addEventListener("DOMContentLoaded", function () {
-    // إظهار اللون الأول لمدة ثانية واحدة
     setTimeout(function () {
         document.querySelector('.initial-color').style.display = 'none';
         document.querySelector('.main-color').style.display = 'block';
         document.getElementById('blackBar').style.display = 'block';
     }, 500);
 
-    // إخفاء اللودر بعد 4 ثواني
     setTimeout(function () {
-        document.documentElement.style.setProperty('--main-color', '#17a2b8'); // تغيير الخلفية إلى اللون اللبني
+        document.documentElement.style.setProperty('--main-color', '#17a2b8');
         document.body.classList.add("loaded");
     }, 2500);
 });
