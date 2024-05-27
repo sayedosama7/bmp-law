@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
+    <!-- wow-css  -->
+    <link rel="stylesheet" href="./css/wow/animate.css">
+    <!-- animate-css  -->
+    <link rel="stylesheet" href="./css/animate.min.css">
     <!-- swiper css  -->
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <!-- fontawesome  -->
@@ -25,9 +29,14 @@
 
 <body>
 
+<!-- start loader  -->
+    <div class="loader" id="preloader">
+        <div class="color-box initial-color"></div>
+        <div class="color-box main-color animate__animated animate__flash animate__infinite animate__slower"></div>
+    </div>
 
     <!-- start banner -->
-    <div class="container-fluid banner-section">
+    <div class="container-fluid banner-section content">
         <div class="row">
             <div class="col-md-12">
                 <!-- start navbar  -->
@@ -621,8 +630,7 @@
                 <div class="col-md-3 mb-3 position-relative  text-center">
                     <div class="partner">
                         <img src="./images/partner/partner-background.png" class="img-fluid" alt="partner">
-                        <img class="position-absolute icon w-50 img-fluid" src="./images/partner/p-4.png"
-                            alt="partner">
+                        <img class="position-absolute icon w-50 img-fluid" src="./images/partner/p-4.png" alt="partner">
                     </div>
                 </div>
 
@@ -756,6 +764,7 @@
         </div>
     </div>
     <!-- End footer  -->
+    <div class="black-bar" id="blackBar"></div> <!-- شريط أسود -->
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -781,6 +790,12 @@
         });
     </script>
 
+
+    <!-- wow  -->
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="./js/swiper-element-bundle.min.js"></script>
     <script src="./js/mdb.min.js"></script>
     <script src="./js/font-awesome.js"></script>

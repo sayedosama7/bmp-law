@@ -92,5 +92,19 @@ Object.assign(swiperEl, {
 });
 swiperEl.initialize();
 
+document.addEventListener("DOMContentLoaded", function () {
+    // إظهار اللون الأول لمدة ثانية واحدة
+    setTimeout(function () {
+        document.querySelector('.initial-color').style.display = 'none';
+        document.querySelector('.main-color').style.display = 'block';
+        document.getElementById('blackBar').style.display = 'block';
+    }, 500);
+
+    // إخفاء اللودر بعد 4 ثواني
+    setTimeout(function () {
+        document.documentElement.style.setProperty('--main-color', '#17a2b8'); // تغيير الخلفية إلى اللون اللبني
+        document.body.classList.add("loaded");
+    }, 2500);
+});
 
 

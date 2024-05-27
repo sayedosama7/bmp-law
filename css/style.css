@@ -1160,3 +1160,77 @@ swiper-slide img {
 .swiper-pagination-fraction {
     display: none !important;
 }
+
+
+body {
+    overflow: hidden; 
+    background-color: var(--main-color); /* تعيين لون الخلفية */
+    transition: background-color 1s ease-out; /* تأثير الانتقال لتغيير الخلفية */
+}
+
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color); /* تعيين لون الخلفية للودر */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease-out;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+}
+
+.initial-color {
+    background-color: white; /* اللون الأول */
+    width: 100%;
+    height: 100vh;
+}
+
+.main-color {
+    background-image: url('../images/logo.png'); /* إضافة الصورة */
+    background-position: center; /* عرض الصورة في المنتصف */
+    background-size: 40%; /* تحجيم الصورة لتناسب حجم العنصر */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+.loaded .loader {
+    transform: translateX(-100%);
+}
+
+.content {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.loaded .content {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.black-bar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    height: 100%;
+    background-color: black;
+    animation: moveBar 1.5s forwards;
+    z-index: 9999; /* لضمان أن الشريط فوق اللون */
+    opacity: .5;
+}
+
+@keyframes moveBar {
+    to {
+        left: 100%;
+    }
+}
